@@ -1,7 +1,8 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
 import { SALON_INFO } from '../data/salonData';
-import { Coins, QrCode, LogOut, Shield, User, Camera, Lock, Users, Sparkles, Scissors, MapPin } from 'lucide-react';
+import { Coins, QrCode, LogOut, Shield, User, Camera, Lock, Users, Sparkles, Scissors, MapPin, Share2 } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface NavbarProps {
   onOpenMyQr?: () => void;
@@ -9,6 +10,7 @@ interface NavbarProps {
   onSelectTab?: (tab: 'dashboard' | 'menu' | 'leaderboard' | 'prizes' | 'customers' | 'contact') => void;
   activeTab?: string;
   onOpenOwnerModal?: () => void;
+  onOpenShareModal?: () => void;
   pendingApprovalsCount?: number;
 }
 
@@ -18,6 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   onSelectTab,
   activeTab = 'dashboard',
   onOpenOwnerModal,
+  onOpenShareModal,
   pendingApprovalsCount = 0,
 }) => {
   const { user, isOwner, isCustomer, logout } = useAuth();
@@ -131,7 +134,22 @@ export const Navbar: React.FC<NavbarProps> = ({
         )}
 
         {/* Action Controls */}
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2">
+          {/* Universal Install App Button */}
+          <PWAInstallButton variant="navbar" onOpenShareModal={onOpenShareModal} />
+
+          {/* Share App Link Button */}
+          {onOpenShareModal && (
+            <button
+              onClick={onOpenShareModal}
+              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-amber-400 border border-slate-800 text-xs font-semibold transition-colors cursor-pointer"
+              title="Share / Publish App Link"
+            >
+              <Share2 className="w-3.5 h-3.5" />
+              <span>Share Link</span>
+            </button>
+          )}
+
           {user ? (
             <>
               {/* Customer QR trigger */}

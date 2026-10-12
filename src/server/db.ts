@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
-import { User, Purchase, LeaderboardEntry, MonthlyPrize, CustomerRecord, VerificationStatus } from '../types';
+import { User, Purchase, LeaderboardEntry, MonthlyPrize, CustomerRecord, VerificationStatus } from '../types/index.ts';
 
 export interface DBUser extends User {
   passwordHash: string;

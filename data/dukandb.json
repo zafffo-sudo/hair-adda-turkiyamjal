@@ -8,7 +8,9 @@
       "qrCode": "HA-OWNER-7287819072",
       "createdAt": "2026-08-01T10:00:00.000Z",
       "passwordHash": "a6af07dafd1430b6c38b66e1e17dcf9ea4621a4aee1aa039e76ee5a88c04177d0d572aeda6371f60863d335e30f7698635738227e06ba54cf1f4353271f61a01",
-      "salt": "5553ec822c9077e78480601f17de160b"
+      "salt": "5553ec822c9077e78480601f17de160b",
+      "customerIdCode": "HA-ADMIN-01",
+      "verificationStatus": "verified"
     },
     {
       "id": "usr_cust_1",
@@ -18,7 +20,10 @@
       "qrCode": "DKN-CUST-9876543210",
       "createdAt": "2026-08-10T11:00:00.000Z",
       "passwordHash": "3f516164d0ec7e813c8b5a7d972f798ab62cfa16748a251f66c06000d751ea896232ae14f78d6d8f3e935b0d84147ac457ccd2a1f2302d76d6b939c0d73ccbab",
-      "salt": "acf26850f79b8f410c589da30784a8ca"
+      "salt": "acf26850f79b8f410c589da30784a8ca",
+      "customerIdCode": "HA-ID-1001",
+      "verificationStatus": "verified",
+      "lastLogin": "2026-10-12T21:01:18.657Z"
     },
     {
       "id": "usr_cust_2",
@@ -28,7 +33,9 @@
       "qrCode": "DKN-CUST-9876543211",
       "createdAt": "2026-08-15T14:30:00.000Z",
       "passwordHash": "3f516164d0ec7e813c8b5a7d972f798ab62cfa16748a251f66c06000d751ea896232ae14f78d6d8f3e935b0d84147ac457ccd2a1f2302d76d6b939c0d73ccbab",
-      "salt": "acf26850f79b8f410c589da30784a8ca"
+      "salt": "acf26850f79b8f410c589da30784a8ca",
+      "customerIdCode": "HA-ID-1002",
+      "verificationStatus": "verified"
     },
     {
       "id": "usr_cust_3",
@@ -38,7 +45,9 @@
       "qrCode": "DKN-CUST-9876543212",
       "createdAt": "2026-08-20T16:00:00.000Z",
       "passwordHash": "3f516164d0ec7e813c8b5a7d972f798ab62cfa16748a251f66c06000d751ea896232ae14f78d6d8f3e935b0d84147ac457ccd2a1f2302d76d6b939c0d73ccbab",
-      "salt": "acf26850f79b8f410c589da30784a8ca"
+      "salt": "acf26850f79b8f410c589da30784a8ca",
+      "customerIdCode": "HA-ID-1003",
+      "verificationStatus": "verified"
     },
     {
       "id": "usr_cust_4",
@@ -48,7 +57,9 @@
       "qrCode": "DKN-CUST-9876543213",
       "createdAt": "2026-08-22T09:15:00.000Z",
       "passwordHash": "3f516164d0ec7e813c8b5a7d972f798ab62cfa16748a251f66c06000d751ea896232ae14f78d6d8f3e935b0d84147ac457ccd2a1f2302d76d6b939c0d73ccbab",
-      "salt": "acf26850f79b8f410c589da30784a8ca"
+      "salt": "acf26850f79b8f410c589da30784a8ca",
+      "customerIdCode": "HA-ID-1004",
+      "verificationStatus": "verified"
     },
     {
       "id": "usr_cust_1791832648217",
@@ -58,7 +69,24 @@
       "qrCode": "DKN-CUST-3030231321",
       "createdAt": "2026-10-12T19:17:28.217Z",
       "passwordHash": "c9f236b4bad882c81d72a42803efc731bea45629e5ef0fc1c6d2d0e9e37fe468dabb7afa1c2b325761fd259703e4d5a45b13e73750e6118f2fc4c24632ca2a5a",
-      "salt": "0fdeba315c0dd128a5f78555daa0b099"
+      "salt": "0fdeba315c0dd128a5f78555daa0b099",
+      "customerIdCode": "HA-ID-1005",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "usr_cust_1791838111211",
+      "role": "customer",
+      "name": "baby1",
+      "mobile": "7860973709",
+      "qrCode": "HA-CUST-7860973709",
+      "customerIdCode": "HA-ID-1006",
+      "verificationStatus": "pending",
+      "verifiedAt": null,
+      "verifiedBy": null,
+      "lastLogin": "2026-10-12T20:48:31.212Z",
+      "createdAt": "2026-10-12T20:48:31.212Z",
+      "passwordHash": "e92e469f0d171925f020d94d95fbc925fde6b701d4758abc9ea6a3b5a45448836b6b124dd9566daa221047ba73b8ccda9c4ea2231a68f3a2dba442b83bce5968",
+      "salt": "ca00835c459294ed7c0e3713b4dea905"
     }
   ],
   "purchases": [

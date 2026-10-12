@@ -12,6 +12,7 @@ import { ContactView } from './components/ContactView';
 import { CustomerQrModal } from './components/CustomerQrModal';
 import { QrScannerModal } from './components/QrScannerModal';
 import { OwnerLoginModal } from './components/OwnerLoginModal';
+import { ShareAppModal } from './components/ShareAppModal';
 import { SALON_INFO } from './data/salonData';
 import {
   Trophy,
@@ -25,6 +26,8 @@ import {
   MapPin,
   Sparkles,
   Lock,
+  Share2,
+  Download,
 } from 'lucide-react';
 
 const MainApp: React.FC = () => {
@@ -33,6 +36,7 @@ const MainApp: React.FC = () => {
   const [isCustomerQrOpen, setIsCustomerQrOpen] = useState(false);
   const [isOwnerScannerOpen, setIsOwnerScannerOpen] = useState(false);
   const [isOwnerLoginModalOpen, setIsOwnerLoginModalOpen] = useState(false);
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   if (isLoading) {
     return (
@@ -46,7 +50,7 @@ const MainApp: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-amber-400 selection:text-slate-950">
       
-      {/* Top Banner: Hair Adda Key Offers & Rules */}
+      {/* Top Banner: Hair Adda Key Offers & Rules + Direct Install / Share Trigger */}
       <div className="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 text-xs font-bold py-1.5 px-4 text-center">
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3 flex-wrap">
           <span>✂️ Hair Adda {SALON_INFO.branch}</span>
@@ -55,9 +59,15 @@ const MainApp: React.FC = () => {
           <span aria-hidden="true">·</span>
           <span>👑 Membership ₹499 (15% OFF)</span>
           <span aria-hidden="true" className="hidden sm:inline">·</span>
-          <span className="hidden sm:inline">🪙 ₹5,000 Spend = 250 Coins · ₹10,000 = 600 Coins</span>
-          <span aria-hidden="true" className="hidden sm:inline">·</span>
-          <span className="hidden sm:inline">🏆 #1 Spender Wins ₹200 Prize</span>
+          <span className="hidden sm:inline">🪙 ₹5,000 = 250 Coins · ₹10,000 = 600 Coins</span>
+          <span aria-hidden="true">·</span>
+          <button
+            onClick={() => setIsShareModalOpen(true)}
+            className="inline-flex items-center gap-1 bg-slate-950 text-amber-400 px-2 py-0.5 rounded-full text-[11px] font-extrabold hover:bg-slate-900 transition-colors cursor-pointer shadow-sm ml-1"
+          >
+            <Download className="w-3 h-3 stroke-[2.5]" />
+            <span>Install / Share App</span>
+          </button>
         </div>
       </div>
 
@@ -68,6 +78,7 @@ const MainApp: React.FC = () => {
         onSelectTab={setActiveTab}
         activeTab={activeTab}
         onOpenOwnerModal={() => setIsOwnerLoginModalOpen(true)}
+        onOpenShareModal={() => setIsShareModalOpen(true)}
       />
 
       {/* Content Area */}
@@ -121,6 +132,12 @@ const MainApp: React.FC = () => {
         isOpen={isOwnerLoginModalOpen}
         onClose={() => setIsOwnerLoginModalOpen(false)}
         onSuccess={() => setActiveTab('dashboard')}
+      />
+
+      {/* App Publish & Share Link Modal */}
+      <ShareAppModal
+        isOpen={isShareModalOpen}
+        onClose={() => setIsShareModalOpen(false)}
       />
 
       {/* Mobile Bottom Navigation Bar */}
@@ -203,13 +220,11 @@ const MainApp: React.FC = () => {
           </button>
 
           <button
-            onClick={() => setActiveTab('contact')}
-            className={`flex flex-col items-center gap-0.5 cursor-pointer ${
-              activeTab === 'contact' ? 'text-amber-400' : 'text-slate-400'
-            }`}
+            onClick={() => setIsShareModalOpen(true)}
+            className="flex flex-col items-center gap-0.5 text-slate-400 hover:text-amber-400 cursor-pointer"
           >
-            <MapPin className="w-4 h-4" />
-            <span>Salon</span>
+            <Share2 className="w-4 h-4" />
+            <span>Share</span>
           </button>
         </nav>
       )}
@@ -224,8 +239,15 @@ const MainApp: React.FC = () => {
             <span className="text-slate-600">·</span>
             <span>Franchise: {SALON_INFO.franchiseContact}</span>
           </div>
-          <div className="flex items-center gap-3">
-            <span>1 Coin = ₹1 · ₹5,000 = 250 Coins · ₹10,000 = 600 Coins</span>
+          <div className="flex items-center gap-3 flex-wrap justify-center">
+            <button
+              onClick={() => setIsShareModalOpen(true)}
+              className="text-amber-400 hover:text-amber-300 font-bold transition-colors flex items-center gap-1 cursor-pointer bg-slate-900 px-2.5 py-1 rounded-lg border border-slate-800"
+              title="Share App Link"
+            >
+              <Share2 className="w-3.5 h-3.5" />
+              <span>Publish / Share Link & QR</span>
+            </button>
             {!user && (
               <>
                 <span className="text-slate-700">·</span>
