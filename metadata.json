@@ -1,0 +1,6 @@
+{
+  "name": "Hair Adda Unisex Salon",
+  "description": "Hair Adda Unisex Salon in Turkayamjal - Style, Beauty & Elegance. Haircuts, styling, grooming, loyalty coins, flat 10% off and membership rewards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

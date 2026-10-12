@@ -1,0 +1,194 @@
+{
+  "users": [
+    {
+      "id": "usr_owner_1",
+      "role": "owner",
+      "name": "Hair Adda Owner (Turkayamjal)",
+      "mobile": "7287819072",
+      "qrCode": "HA-OWNER-7287819072",
+      "createdAt": "2026-08-01T10:00:00.000Z",
+      "passwordHash": "a6af07dafd1430b6c38b66e1e17dcf9ea4621a4aee1aa039e76ee5a88c04177d0d572aeda6371f60863d335e30f7698635738227e06ba54cf1f4353271f61a01",
+      "salt": "5553ec822c9077e78480601f17de160b"
+    },
+    {
+      "id": "usr_cust_1",
+      "role": "customer",
+      "name": "Amit Kumar",
+      "mobile": "9876543210",
+      "qrCode": "DKN-CUST-9876543210",
+      "createdAt": "2026-08-10T11:00:00.000Z",
+      "passwordHash": "3f516164d0ec7e813c8b5a7d972f798ab62cfa16748a251f66c06000d751ea896232ae14f78d6d8f3e935b0d84147ac457ccd2a1f2302d76d6b939c0d73ccbab",
+      "salt": "acf26850f79b8f410c589da30784a8ca"
+    },
+    {
+      "id": "usr_cust_2",
+      "role": "customer",
+      "name": "Priya Patel",
+      "mobile": "9876543211",
+      "qrCode": "DKN-CUST-9876543211",
+      "createdAt": "2026-08-15T14:30:00.000Z",
+      "passwordHash": "3f516164d0ec7e813c8b5a7d972f798ab62cfa16748a251f66c06000d751ea896232ae14f78d6d8f3e935b0d84147ac457ccd2a1f2302d76d6b939c0d73ccbab",
+      "salt": "acf26850f79b8f410c589da30784a8ca"
+    },
+    {
+      "id": "usr_cust_3",
+      "role": "customer",
+      "name": "Vikram Singh",
+      "mobile": "9876543212",
+      "qrCode": "DKN-CUST-9876543212",
+      "createdAt": "2026-08-20T16:00:00.000Z",
+      "passwordHash": "3f516164d0ec7e813c8b5a7d972f798ab62cfa16748a251f66c06000d751ea896232ae14f78d6d8f3e935b0d84147ac457ccd2a1f2302d76d6b939c0d73ccbab",
+      "salt": "acf26850f79b8f410c589da30784a8ca"
+    },
+    {
+      "id": "usr_cust_4",
+      "role": "customer",
+      "name": "Sunita Rao",
+      "mobile": "9876543213",
+      "qrCode": "DKN-CUST-9876543213",
+      "createdAt": "2026-08-22T09:15:00.000Z",
+      "passwordHash": "3f516164d0ec7e813c8b5a7d972f798ab62cfa16748a251f66c06000d751ea896232ae14f78d6d8f3e935b0d84147ac457ccd2a1f2302d76d6b939c0d73ccbab",
+      "salt": "acf26850f79b8f410c589da30784a8ca"
+    },
+    {
+      "id": "usr_cust_1791832648217",
+      "role": "customer",
+      "name": "vjhb n",
+      "mobile": "3030231321",
+      "qrCode": "DKN-CUST-3030231321",
+      "createdAt": "2026-10-12T19:17:28.217Z",
+      "passwordHash": "c9f236b4bad882c81d72a42803efc731bea45629e5ef0fc1c6d2d0e9e37fe468dabb7afa1c2b325761fd259703e4d5a45b13e73750e6118f2fc4c24632ca2a5a",
+      "salt": "0fdeba315c0dd128a5f78555daa0b099"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "pur_sep_01",
+      "customerId": "usr_cust_4",
+      "customerMobile": "9876543213",
+      "customerName": "Sunita Rao",
+      "billNumber": "INV-2026-0901",
+      "amount": 8200,
+      "items": "Silk Sarees & Festive Wear (3 Items)",
+      "date": "2026-09-08T15:20:00.000Z",
+      "monthKey": "2026-09",
+      "addedBy": "usr_owner_1"
+    },
+    {
+      "id": "pur_sep_02",
+      "customerId": "usr_cust_4",
+      "customerMobile": "9876543213",
+      "customerName": "Sunita Rao",
+      "billNumber": "INV-2026-0914",
+      "amount": 6000,
+      "items": "Embroidered Kurti Set & Accessories",
+      "date": "2026-09-22T17:45:00.000Z",
+      "monthKey": "2026-09",
+      "addedBy": "usr_owner_1"
+    },
+    {
+      "id": "pur_sep_03",
+      "customerId": "usr_cust_1",
+      "customerMobile": "9876543210",
+      "customerName": "Amit Kumar",
+      "billNumber": "INV-2026-0920",
+      "amount": 7500,
+      "items": "Cotton Shirts & Denims (5 items)",
+      "date": "2026-09-15T11:30:00.000Z",
+      "monthKey": "2026-09",
+      "addedBy": "usr_owner_1"
+    },
+    {
+      "id": "pur_sep_04",
+      "customerId": "usr_cust_2",
+      "customerMobile": "9876543211",
+      "customerName": "Priya Patel",
+      "billNumber": "INV-2026-0925",
+      "amount": 5200,
+      "items": "Festive Lehengas & Dupattas",
+      "date": "2026-09-28T18:10:00.000Z",
+      "monthKey": "2026-09",
+      "addedBy": "usr_owner_1"
+    },
+    {
+      "id": "pur_oct_01",
+      "customerId": "usr_cust_1",
+      "customerMobile": "9876543210",
+      "customerName": "Amit Kumar",
+      "billNumber": "INV-2026-1001",
+      "amount": 5450,
+      "items": "Raymond Suiting & Linen Shirts",
+      "date": "2026-10-02T12:00:00.000Z",
+      "monthKey": "2026-10",
+      "addedBy": "usr_owner_1"
+    },
+    {
+      "id": "pur_oct_02",
+      "customerId": "usr_cust_1",
+      "customerMobile": "9876543210",
+      "customerName": "Amit Kumar",
+      "billNumber": "INV-2026-1008",
+      "amount": 7000,
+      "items": "Designer Blazers & Trousers Pack",
+      "date": "2026-10-09T16:20:00.000Z",
+      "monthKey": "2026-10",
+      "addedBy": "usr_owner_1"
+    },
+    {
+      "id": "pur_oct_03",
+      "customerId": "usr_cust_2",
+      "customerMobile": "9876543211",
+      "customerName": "Priya Patel",
+      "billNumber": "INV-2026-1004",
+      "amount": 3200,
+      "items": "Chanderi Salwar Suits",
+      "date": "2026-10-04T14:10:00.000Z",
+      "monthKey": "2026-10",
+      "addedBy": "usr_owner_1"
+    },
+    {
+      "id": "pur_oct_04",
+      "customerId": "usr_cust_2",
+      "customerMobile": "9876543211",
+      "customerName": "Priya Patel",
+      "billNumber": "INV-2026-1011",
+      "amount": 3000,
+      "items": "Handloom Cotton Dupattas & Tops",
+      "date": "2026-10-11T13:40:00.000Z",
+      "monthKey": "2026-10",
+      "addedBy": "usr_owner_1"
+    },
+    {
+      "id": "pur_oct_05",
+      "customerId": "usr_cust_3",
+      "customerMobile": "9876543212",
+      "customerName": "Vikram Singh",
+      "billNumber": "INV-2026-1007",
+      "amount": 3850,
+      "items": "Casual Polos & Leather Belt",
+      "date": "2026-10-07T18:00:00.000Z",
+      "monthKey": "2026-10",
+      "addedBy": "usr_owner_1"
+    }
+  ],
+  "prizes": [
+    {
+      "id": "prz_sep_2026",
+      "monthKey": "2026-09",
+      "monthLabel": "September 2026",
+      "winnerCustomerId": "usr_cust_4",
+      "winnerName": "Sunita Rao",
+      "winnerMobile": "9876543213",
+      "prizeAmount": 200,
+      "claimCode": "CLAIM-SEP26-7A9B",
+      "claimQr": "PRIZE-CLAIM-SEP26-7A9B",
+      "status": "unclaimed",
+      "claimedAt": null,
+      "claimedBillNumber": null,
+      "notes": "Rank #1 Winner for September 2026 (Spend: ₹14,200)"
+    }
+  ],
+  "archivedMonths": [
+    "2026-09"
+  ]
+}
